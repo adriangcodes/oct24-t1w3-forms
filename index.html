@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speaker Registration</h1>
+    <p>Want to speak at our fake conference? Register here.</p>
+    <form action="">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="fname" id="fname" placeholder="First Name" required>
+        </div>
+        <div>
+            <label for="lname">Last Name</label>
+            <input type="lname" id="lname" placeholder="Last Name" required>
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+        <div>
+            <label for="talktype1">Main Stage</label>
+            <input type="radio" checked name="talktype" id="talktype1">
+            <label for="talktype2">Workshop</label>
+            <input type="radio" name="talktype" id="talktype2">
+        </div>
+        <div>
+            <label for="talktype1">Main Stage</label>
+            <input type="checkbox" checked name="talktype" id="talktype1">
+            <label for="talktype2">Workshop</label>
+            <input type="checkbox" name="talktype" id="talktype2">
+        </div>
+        <div>
+            <label for="tshirt">T-Shirt Size</label>
+            <select name="tshirt" id="tshirt">
+                <option value="small">Small</option>
+                <option selected value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="description">Presentation Description</label>
+            <textarea name="description" id="description">Maximum 300 words</textarea>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
